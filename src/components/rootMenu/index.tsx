@@ -3,7 +3,7 @@ import React from "react";
 const RootMenu = () => {
  const handleClickEvent = {
   routeMenu: (path: string) => (event: React.MouseEvent<HTMLButtonElement>) => {
-   console.log("wefwfe")
+   console.log("wefwfe");
   },
  }
 
