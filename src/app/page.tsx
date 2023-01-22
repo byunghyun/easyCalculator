@@ -1,7 +1,12 @@
-import RootMenu from "@/components/rootMenu";
+import RootMenu from '@/components/rootMenu';
+import './global.scss';
 
-export default function Home() {
+const Home = () => {
   return (
-    <RootMenu />
+    <main className='flex w-full h-full'>
+      <RootMenu />
+    </main>
   );
-}
+};
+
+export default Home;

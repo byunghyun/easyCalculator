@@ -1,13 +1,12 @@
-import { RootLayoutPropsInterface } from "@/types";
-import "./globals.scss";
+import { RootLayoutPropsInterface } from '@/types';
 
-export default function RootLayout({
-  children,
-}: RootLayoutPropsInterface) {
+const RootLayout = ({ children }: RootLayoutPropsInterface) => {
   return (
-    <html lang="ko">
+    <html lang='ko'>
       <head />
       <body>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;
