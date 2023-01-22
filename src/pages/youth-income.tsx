@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../app/global.scss';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import 'dayjs/locale/ko';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -20,12 +22,10 @@ const youthIncome = () => {
   const router = useRouter();
   const [isShownResult, setShowResult] = useState(false);
 
-  const [birthDate, setBirthDate] = useState(dayjs('1988-06-17'));
-  const [employmentDate, setEmploymentDate] = useState(dayjs('2022-05-02'));
-  const [enlistmentDate, setEnlistmentDate] = useState(dayjs('2008-03-18'));
-  const [militaryDischargeDate, setMilitaryDischargeDate] = useState(
-    dayjs('2010-02-06'),
-  );
+  const [birthDate, setBirthDate] = useState(dayjs());
+  const [employmentDate, setEmploymentDate] = useState(dayjs());
+  const [enlistmentDate, setEnlistmentDate] = useState(dayjs());
+  const [militaryDischargeDate, setMilitaryDischargeDate] = useState(dayjs());
   const [selectedMilitary, setSelectedMilitary] = useState<
     'notObligatoryMilitaryService' | 'completedMilitaryService'
   >('notObligatoryMilitaryService');
