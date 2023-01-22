@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import '../app/global.scss';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import 'dayjs/locale/ko';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -95,13 +93,13 @@ const youthIncome = () => {
       setResultMilitaryMonth(resultMilitaryDate.month);
       setResultMilitaryDate(resultMilitaryDate.date);
 
-      const subtractMilitaryDate = birthDate
-        .subtract(resultMilitaryDate.year, 'year')
-        .subtract(resultMilitaryDate.month, 'month')
-        .subtract(resultMilitaryDate.date, 'day');
+      const addMilitaryDate = birthDate
+        .add(resultMilitaryDate.year, 'year')
+        .add(resultMilitaryDate.month, 'month')
+        .add(resultMilitaryDate.date, 'day');
 
       const resultSubtractMilitaryDate = dateDiff(
-        subtractMilitaryDate,
+        addMilitaryDate,
         employmentDate,
       );
       setResultSubtractMilitaryYear(resultSubtractMilitaryDate.year);
