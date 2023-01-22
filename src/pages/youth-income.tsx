@@ -116,13 +116,13 @@ const youthIncome = () => {
           isShown={isShownResult}
           onClose={handleClickEvent.closeResultPopup}
         >
-          <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[80%] flex flex-col justify-between bg-white h-auto shadow-2xl rounded-[10px] p-[30px]'>
+          <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[90%] flex flex-col justify-between bg-white h-auto shadow-2xl rounded-[10px] p-[30px]'>
             <h1 className='text-[26px] text-gray-700 font-medium text-center mb-12 break-words whitespace-nowrap'>
               계산 결과
             </h1>
             <div>
-              <div className='flex flex-row items-center justify-between mb-[12px] last:mb-[12px]'>
-                <p className='text-[18px] text-gray-500 font-medium '>
+              <div className='flex flex-col items-start mb-[18px] last:mb-0'>
+                <p className='text-ellipsis overflow-hidden text-[18px] text-gray-500 font-medium '>
                   최초 취업일 당시 만 나이
                 </p>
                 <p>
@@ -130,8 +130,8 @@ const youthIncome = () => {
                 </p>
               </div>
 
-              <div className='flex flex-row items-center justify-between mb-[12px] last:mb-[12px]'>
-                <p className='text-[18px] text-gray-500 font-medium'>
+              <div className='flex flex-col items-start mb-[18px] last:mb-0'>
+                <p className='text-ellipsis overflow-hidden text-[18px] text-gray-500 font-medium'>
                   병역 기간
                 </p>
                 <p>
@@ -139,8 +139,8 @@ const youthIncome = () => {
                   {resultMilitaryDate}일
                 </p>
               </div>
-              <div className='flex flex-row items-center justify-between mb-[12px] last:mb-[12px]'>
-                <p className='text-[18px] text-gray-500 font-medium'>
+              <div className='flex flex-col items-start mb-[18px] last:mb-0'>
+                <p className='text-ellipsis overflow-hidden text-[18px] text-gray-500 font-medium'>
                   병역 기간을 차감한 후 나이
                 </p>
                 <p>
