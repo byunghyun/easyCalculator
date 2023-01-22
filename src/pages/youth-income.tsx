@@ -180,6 +180,7 @@ const youthIncome = () => {
                 label='생년월일'
                 inputFormat='YYYY-MM-DD'
                 value={birthDate}
+                className='flex-1'
                 onChange={handleChangeEvent.birthDate}
                 renderInput={(params) => (
                   <TextField
@@ -197,48 +198,51 @@ const youthIncome = () => {
                 label='취업일'
                 inputFormat='YYYY-MM-DD'
                 value={employmentDate}
+                className='flex-1'
                 onChange={handleChangeEvent.employmentDate}
                 renderInput={(params) => <TextField {...params} />}
               />
             </div>
             <div className='last:mb-0 flex flex-row items-center justify-between mb-6'>
               <label className='w-[100px] whitespace-nowrap'>군필여부</label>
-              <div className='flex flex-row justify-between items-center w-[235px]'>
-                <div className=''>
-                  <Radio
-                    checked={selectedMilitary === 'completedMilitaryService'}
-                    onChange={handleChangeEvent.selectedMilitary}
-                    value='completedMilitaryService'
-                    id='completedMilitaryService'
-                    name='radio-buttons'
-                    inputProps={{ 'aria-label': 'A' }}
-                    color='primary'
-                  />
-                  <label
-                    htmlFor='completedMilitaryService'
-                    className='hover:cursor-pointer'
-                  >
-                    군필
-                  </label>
-                </div>
-                <div className=''>
-                  <Radio
-                    checked={
-                      selectedMilitary === 'notObligatoryMilitaryService'
-                    }
-                    onChange={handleChangeEvent.selectedMilitary}
-                    value='notObligatoryMilitaryService'
-                    id='notObligatoryMilitaryService'
-                    name='radio-buttons'
-                    inputProps={{ 'aria-label': 'B' }}
-                    color='primary'
-                  />
-                  <label
-                    htmlFor='notObligatoryMilitaryService'
-                    className='hover:cursor-pointer'
-                  >
-                    미필
-                  </label>
+              <div className='flex-1'>
+                <div className=' flex flex-row items-center justify-start'>
+                  <div className='mr-[15px]'>
+                    <Radio
+                      checked={selectedMilitary === 'completedMilitaryService'}
+                      onChange={handleChangeEvent.selectedMilitary}
+                      value='completedMilitaryService'
+                      id='completedMilitaryService'
+                      name='radio-buttons'
+                      inputProps={{ 'aria-label': 'A' }}
+                      color='primary'
+                    />
+                    <label
+                      htmlFor='completedMilitaryService'
+                      className='hover:cursor-pointer'
+                    >
+                      군필
+                    </label>
+                  </div>
+                  <div className=''>
+                    <Radio
+                      checked={
+                        selectedMilitary === 'notObligatoryMilitaryService'
+                      }
+                      onChange={handleChangeEvent.selectedMilitary}
+                      value='notObligatoryMilitaryService'
+                      id='notObligatoryMilitaryService'
+                      name='radio-buttons'
+                      inputProps={{ 'aria-label': 'B' }}
+                      color='primary'
+                    />
+                    <label
+                      htmlFor='notObligatoryMilitaryService'
+                      className='hover:cursor-pointer'
+                    >
+                      미필
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,6 +254,7 @@ const youthIncome = () => {
                     label='입대일'
                     inputFormat='YYYY-MM-DD'
                     value={enlistmentDate}
+                    className='flex-1'
                     onChange={handleChangeEvent.enlistmentDate}
                     renderInput={(params) => <TextField {...params} />}
                   />
@@ -260,6 +265,7 @@ const youthIncome = () => {
                     label='전역일'
                     inputFormat='YYYY-MM-DD'
                     value={militaryDischargeDate}
+                    className='flex-1'
                     onChange={handleChangeEvent.militaryDischargeDate}
                     renderInput={(params) => <TextField {...params} />}
                   />

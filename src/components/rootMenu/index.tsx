@@ -22,12 +22,12 @@ const RootMenu = () => {
           </Link>
         </li>
         <li className='border-[1px] text-center text-gray-500 hover:text-primary-medium hover:border-primary-medium border-gray-400  mb-[12px] last:mb-0 rounded-[10px]'>
-          <button
-            onClick={handleClickEvent.test}
+          <Link
+            href='d-day-excluding-weekends'
             className='block w-full h-full p-[15px]'
           >
-            퇴사일 D-Day (주말, 연차 제외 가능)
-          </button>
+            퇴사일 D-Day (주말 제외 가능)
+          </Link>
         </li>
         <li className='border-[1px] text-center text-gray-500 hover:text-primary-medium hover:border-primary-medium border-gray-400  mb-[12px] last:mb-0 rounded-[10px]'>
           <button
