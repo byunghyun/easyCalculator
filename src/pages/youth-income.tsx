@@ -122,7 +122,7 @@ const youthIncome = () => {
             </h1>
             <div>
               <div className='flex flex-row items-center justify-between mb-[12px] last:mb-[12px]'>
-                <p className='text-[18px] text-gray-500 font-medium'>
+                <p className='text-[18px] text-gray-500 font-medium '>
                   최초 취업일 당시 만 나이
                 </p>
                 <p>
@@ -169,13 +169,13 @@ const youthIncome = () => {
               >
                 <ArrowBackIosIcon sx={{ fill: '#676767' }} />
               </button>
-              <h1 className='text-[22px] text-center '>
-                중소기업 소득세 감면 신청서 양식 도우미
+              <h1 className='w-full text-ellipsis overflow-hidden text-[21px] text-center px-[30px] tracking-tighter whitespace-nowrap'>
+                중소기업 소득세 감면 신청서 가이드
               </h1>
             </header>
 
             <div className='last:mb-0 flex flex-row items-center justify-between mb-6'>
-              <label>생년월일</label>
+              <label className='w-[100px] whitespace-nowrap'>생년월일</label>
               <DesktopDatePicker
                 label='생년월일'
                 inputFormat='YYYY-MM-DD'
@@ -192,7 +192,7 @@ const youthIncome = () => {
               />
             </div>
             <div className='last:mb-0 flex flex-row items-center justify-between mb-6'>
-              <label>취업일</label>
+              <label className='w-[100px] whitespace-nowrap'>취업일</label>
               <DesktopDatePicker
                 label='취업일'
                 inputFormat='YYYY-MM-DD'
@@ -202,7 +202,7 @@ const youthIncome = () => {
               />
             </div>
             <div className='last:mb-0 flex flex-row items-center justify-between mb-6'>
-              <label>군필여부</label>
+              <label className='w-[100px] whitespace-nowrap'>군필여부</label>
               <div className='flex flex-row justify-between items-center w-[235px]'>
                 <div className=''>
                   <Radio
@@ -245,7 +245,7 @@ const youthIncome = () => {
             {selectedMilitary === 'completedMilitaryService' && (
               <>
                 <div className='last:mb-0 flex flex-row items-center justify-between mb-6'>
-                  <label>입대일</label>
+                  <label className='w-[100px] whitespace-nowrap'>입대일</label>
                   <DesktopDatePicker
                     label='입대일'
                     inputFormat='YYYY-MM-DD'
@@ -255,7 +255,7 @@ const youthIncome = () => {
                   />
                 </div>
                 <div className='last:mb-0 flex flex-row items-center justify-between mb-6'>
-                  <label>전역일</label>
+                  <label className='w-[100px] whitespace-nowrap'>전역일</label>
                   <DesktopDatePicker
                     label='전역일'
                     inputFormat='YYYY-MM-DD'
