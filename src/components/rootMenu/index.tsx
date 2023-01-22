@@ -29,6 +29,46 @@ const RootMenu = () => {
             퇴사일 D-Day (주말, 연차 제외 가능)
           </button>
         </li>
+        <li className='border-[1px] text-center text-gray-500 hover:text-primary-medium hover:border-primary-medium border-gray-400  mb-[12px] last:mb-0 rounded-[10px]'>
+          <button
+            onClick={handleClickEvent.test}
+            className='block w-full h-full p-[15px]'
+          >
+            성향별 맞는 회사 추천
+          </button>
+        </li>
+        <li className='border-[1px] text-center text-gray-500 hover:text-primary-medium hover:border-primary-medium border-gray-400  mb-[12px] last:mb-0 rounded-[10px]'>
+          <button
+            onClick={handleClickEvent.test}
+            className='block w-full h-full p-[15px]'
+          >
+            직장인이 알면 좋은 노무법
+          </button>
+        </li>
+        <li className='border-[1px] text-center text-gray-500 hover:text-primary-medium hover:border-primary-medium border-gray-400  mb-[12px] last:mb-0 rounded-[10px]'>
+          <button
+            onClick={handleClickEvent.test}
+            className='block w-full h-full p-[15px]'
+          >
+            직종, 연차별 평균 연봉
+          </button>
+        </li>
+        <li className='border-[1px] text-center text-gray-500 hover:text-primary-medium hover:border-primary-medium border-gray-400  mb-[12px] last:mb-0 rounded-[10px]'>
+          <button
+            onClick={handleClickEvent.test}
+            className='block w-full h-full p-[15px]'
+          >
+            포트폴리오 리뷰
+          </button>
+        </li>
+        <li className='border-[1px] text-center text-gray-500 hover:text-primary-medium hover:border-primary-medium border-gray-400  mb-[12px] last:mb-0 rounded-[10px]'>
+          <button
+            onClick={handleClickEvent.test}
+            className='block w-full h-full p-[15px]'
+          >
+            업데이트 정보
+          </button>
+        </li>
       </ul>
     </div>
   );
