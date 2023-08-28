@@ -12,7 +12,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from '@/app/theme';
 import { dateDiff } from '@/utils/dateCalc';
 import _ from 'lodash';
-import DefaultModal from '@/components/designSystem/\bmodal/DefaultModal';
+import DefaultModal from '@/components/designSystem/modal/DefaultModal';
 import { useRouter } from 'next/navigation';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
