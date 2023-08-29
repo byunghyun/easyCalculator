@@ -50,17 +50,20 @@ const LossRecoveryCalculator = () => {
   lossPercentage: (event: React.ChangeEvent<HTMLInputElement>) => {
    console.log('checkNumberInput(event.target.value)', event.target.value);
    // if(checkNumberInput(event.target.value)) {
-
+    console.log('event.target.value', event.target.value);
     if (event.target.value === '') {
+      console.info('ww');
      setDisplayLossPercentage('0');
      setLossPercentage(0);
      return;
    }
    if(parseInt(event.target.value) < 100) {
     if(event.target.value.length > 1 && event.target.value.charAt(0) === '0') {
+      console.info('ww1');
       setLossPercentage(parseInt(event.target.value.substring(1, event.target.value.length)) * 0.01);
       setDisplayLossPercentage(parseFloat(event.target.value.substring(1, event.target.value.length)).toString());
      } else {
+      console.info('ww2');
       setDisplayLossPercentage(parseFloat(event.target.value).toString());
       setLossPercentage(parseInt(event.target.value) * 0.01);
      }
@@ -120,7 +123,7 @@ const LossRecoveryCalculator = () => {
              label='손실률'
              variant={'outlined'}
              className='flex-1'
-             inputProps={{ inputMode: 'numeric', pattern: '[0-9]*', maxLength: 5 }}
+             inputProps={{ inputMode: 'decimal', maxLength: 5 }}
              onChange={handleChangeEvent.lossPercentage}
              value={displayLossPercentage}
            />
